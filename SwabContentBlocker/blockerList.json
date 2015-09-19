@@ -4,7 +4,7 @@
             "type": "block"
         },
         "trigger": {
-            "url-filter": "webkit.org/images/icon-gold.png"
+            "url-filter": "https?://connect.decknetwork.net"
         }
     }
 ]
