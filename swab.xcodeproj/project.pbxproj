@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		585982331BADD5940086654C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585982321BADD5940086654C /* AppDelegate.swift */; };
-		585982351BADD5940086654C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585982341BADD5940086654C /* ViewController.swift */; };
 		585982381BADD5940086654C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 585982361BADD5940086654C /* Main.storyboard */; };
 		5859823A1BADD5940086654C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585982391BADD5940086654C /* Assets.xcassets */; };
 		5859823D1BADD5940086654C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5859823B1BADD5940086654C /* LaunchScreen.storyboard */; };
@@ -61,7 +60,6 @@
 /* Begin PBXFileReference section */
 		5859822F1BADD5940086654C /* swab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		585982321BADD5940086654C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		585982341BADD5940086654C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		585982371BADD5940086654C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		585982391BADD5940086654C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5859823C1BADD5940086654C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				585982321BADD5940086654C /* AppDelegate.swift */,
-				585982341BADD5940086654C /* ViewController.swift */,
 				585982761BADE6E60086654C /* SwabSettings.swift */,
 				585982361BADD5940086654C /* Main.storyboard */,
 				585982391BADD5940086654C /* Assets.xcassets */,
@@ -336,7 +333,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				585982351BADD5940086654C /* ViewController.swift in Sources */,
 				585982771BADE6E60086654C /* SwabSettings.swift in Sources */,
 				585982331BADD5940086654C /* AppDelegate.swift in Sources */,
 			);
