@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Swab Settings-->
         <scene sceneID="Leo-7X-0zc">
             <objects>
-                <tableViewController id="4Sh-AP-3Ip" sceneMemberID="viewController">
+                <tableViewController id="4Sh-AP-3Ip" customClass="SwabSettings" customModule="swab" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kLb-nf-u3P">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
