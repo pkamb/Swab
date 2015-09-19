@@ -17,6 +17,7 @@
 		585982671BADD9220086654C /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 585982661BADD9220086654C /* blockerList.json */; };
 		585982691BADD9220086654C /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585982681BADD9220086654C /* ActionRequestHandler.swift */; };
 		5859826D1BADD9220086654C /* SwabContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 585982641BADD9220086654C /* SwabContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		585982771BADE6E60086654C /* SwabSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585982761BADE6E60086654C /* SwabSettings.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		585982661BADD9220086654C /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
 		585982681BADD9220086654C /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
 		5859826A1BADD9220086654C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		585982761BADE6E60086654C /* SwabSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwabSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				585982321BADD5940086654C /* AppDelegate.swift */,
 				585982341BADD5940086654C /* ViewController.swift */,
+				585982761BADE6E60086654C /* SwabSettings.swift */,
 				585982361BADD5940086654C /* Main.storyboard */,
 				585982391BADD5940086654C /* Assets.xcassets */,
 				5859823B1BADD5940086654C /* LaunchScreen.storyboard */,
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				585982351BADD5940086654C /* ViewController.swift in Sources */,
+				585982771BADE6E60086654C /* SwabSettings.swift in Sources */,
 				585982331BADD5940086654C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,6 +631,7 @@
 				5859826F1BADD9220086654C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
