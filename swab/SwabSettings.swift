@@ -38,6 +38,12 @@ class SwabSettings: UITableViewController {
             return cell
         case (1, 0):
             let cell = tableView.dequeueReusableCellWithIdentifier("swabSetting", forIndexPath: indexPath)
+            
+            let switchControl = UISwitch(frame: CGRectZero)
+            switchControl.on = true
+            switchControl.enabled = false
+            cell.accessoryView = switchControl
+            
             return cell
         default:
             let cell = UITableViewCell.init(style: .Default, reuseIdentifier: nil)
