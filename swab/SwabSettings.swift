@@ -66,6 +66,8 @@ class SwabSettings: UITableViewController {
         if(indexPath.section == 0 && indexPath.row == 0) {
             UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
         }
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
     override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
