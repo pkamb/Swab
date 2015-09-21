@@ -13,11 +13,42 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOK-Hc-ZT6" userLabel="Text Background">
+                                <rect key="frame" x="0.0" y="64" width="375" height="110"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xav-fM-yfn" userLabel="Header Text">
+                                        <rect key="frame" x="12" y="10" width="363" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="4Ei-MX-qTb"/>
+                                        </constraints>
+                                        <string key="text">THE CONTENT BLOCKER FOR
+BLOCKING CREATIVE, WEB AND
+DESIGN ADS</string>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Xav-fM-yfn" secondAttribute="trailing" id="JK2-5y-5m9"/>
+                                    <constraint firstItem="Xav-fM-yfn" firstAttribute="top" secondItem="hOK-Hc-ZT6" secondAttribute="top" constant="10" id="Rj2-F7-YBz"/>
+                                    <constraint firstItem="Xav-fM-yfn" firstAttribute="leading" secondItem="hOK-Hc-ZT6" secondAttribute="leading" constant="12" id="Ted-wZ-SZw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xav-fM-yfn" secondAttribute="bottom" id="flG-HV-omL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hOK-Hc-ZT6" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="DHa-xA-ua2"/>
+                            <constraint firstItem="hOK-Hc-ZT6" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="d2A-Bs-L5h"/>
+                            <constraint firstItem="hOK-Hc-ZT6" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="h5P-Kv-WYT"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Swab" id="xrZ-jh-zJO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
