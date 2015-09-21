@@ -41,7 +41,7 @@ DESIGN ADS</string>
                             </view>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hOK-Hc-ZT6" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="DHa-xA-ua2"/>
                             <constraint firstItem="hOK-Hc-ZT6" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="d2A-Bs-L5h"/>
