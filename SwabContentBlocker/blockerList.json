@@ -258,5 +258,14 @@
         "trigger": {
             "url-filter": "thisisnthappiness.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#deck"
+        },
+        "trigger": {
+            "url-filter": "typographica.org"
+        }
     }
 ]
