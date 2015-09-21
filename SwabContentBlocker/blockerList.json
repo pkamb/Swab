@@ -24,5 +24,14 @@
         "trigger": {
             "url-filter": "annyas.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#ad_wrapper"
+        },
+        "trigger": {
+            "url-filter": "kk.org/cooltools"
+        }
     }
 ]
