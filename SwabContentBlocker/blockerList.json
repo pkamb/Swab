@@ -33,5 +33,14 @@
         "trigger": {
             "url-filter": "kk.org/cooltools"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#deck"
+        },
+        "trigger": {
+            "url-filter": "coudal.com"
+        }
     }
 ]
