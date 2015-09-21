@@ -276,5 +276,14 @@
         "trigger": {
             "url-filter": "veerle.duoh.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".deckads"
+        },
+        "trigger": {
+            "url-filter": "waxy.org"
+        }
     }
 ]
