@@ -249,5 +249,14 @@
         "trigger": {
             "url-filter": "swiss-miss.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#thedeck"
+        },
+        "trigger": {
+            "url-filter": "thisisnthappiness.com"
+        }
     }
 ]
