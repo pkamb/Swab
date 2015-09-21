@@ -60,5 +60,14 @@
         "trigger": {
             "url-filter": "designspiration.net/"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".deck"
+        },
+        "trigger": {
+            "url-filter": "draplin.com"
+        }
     }
 ]
