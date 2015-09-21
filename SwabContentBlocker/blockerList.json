@@ -222,5 +222,14 @@
         "trigger": {
             "url-filter": "usethis.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".thedeck"
+        },
+        "trigger": {
+            "url-filter": "simplebits.com"
+        }
     }
 ]
