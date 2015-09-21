@@ -78,5 +78,14 @@
         "trigger": {
             "url-filter": "ffffound.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#deck"
+        },
+        "trigger": {
+            "url-filter": "fontsinuse.com"
+        }
     }
 ]
