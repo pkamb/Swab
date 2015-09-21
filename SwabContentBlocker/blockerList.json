@@ -132,5 +132,14 @@
         "trigger": {
             "url-filter": "loopinsight.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#deckad"
+        },
+        "trigger": {
+            "url-filter": "marco.org"
+        }
     }
 ]
