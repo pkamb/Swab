@@ -51,5 +51,14 @@
         "trigger": {
             "url-filter": "daringfireball.net"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#TheDeck"
+        },
+        "trigger": {
+            "url-filter": "designspiration.net/"
+        }
     }
 ]
