@@ -105,5 +105,14 @@
         "trigger": {
             "url-filter": "hustwit.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#deckad"
+        },
+        "trigger": {
+            "url-filter": "inessential.com"
+        }
     }
 ]
