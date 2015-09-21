@@ -150,5 +150,14 @@
         "trigger": {
             "url-filter": "metafilter.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".deck_ad"
+        },
+        "trigger": {
+            "url-filter": "mcsweeneys.net"
+        }
     }
 ]
