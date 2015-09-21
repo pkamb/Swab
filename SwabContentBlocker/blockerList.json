@@ -4,7 +4,7 @@
             "type": "block"
         },
         "trigger": {
-            "url-filter": "https?://connect.decknetwork.net"
+            "url-filter": "https?://connect.decknetwork.net--WARNING_REMOVE"
         }
     }
 ]
