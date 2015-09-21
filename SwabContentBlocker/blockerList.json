@@ -159,5 +159,14 @@
         "trigger": {
             "url-filter": "mcsweeneys.net"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#deck_box"
+        },
+        "trigger": {
+            "url-filter": "themorningnews.org"
+        }
     }
 ]
