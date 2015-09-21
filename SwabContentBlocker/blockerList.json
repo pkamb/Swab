@@ -16,4 +16,13 @@
             "url-filter": "alistapart.com"
         }
     },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".deck"
+        },
+        "trigger": {
+            "url-filter": "annyas.com"
+        }
+    }
 ]
