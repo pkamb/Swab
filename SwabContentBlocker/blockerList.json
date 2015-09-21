@@ -177,5 +177,23 @@
         "trigger": {
             "url-filter": "motionographer.com/"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".the-deck"
+        },
+        "trigger": {
+            "url-filter": "thenounproject.com"
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".ad-iframe a[href*='http://decknetwork.net']"
+        },
+        "trigger": {
+            "url-filter": "thenounproject.com"
+        }
     }
 ]
