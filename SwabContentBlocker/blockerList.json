@@ -231,5 +231,14 @@
         "trigger": {
             "url-filter": "simplebits.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".deckad"
+        },
+        "trigger": {
+            "url-filter": "sixcolors.com"
+        }
     }
 ]
