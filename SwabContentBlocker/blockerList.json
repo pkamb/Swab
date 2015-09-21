@@ -69,5 +69,14 @@
         "trigger": {
             "url-filter": "draplin.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#ad-deck"
+        },
+        "trigger": {
+            "url-filter": "ffffound.com"
+        }
     }
 ]
