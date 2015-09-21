@@ -25,8 +25,8 @@
                                             <constraint firstAttribute="height" constant="100" id="4Ei-MX-qTb"/>
                                         </constraints>
                                         <string key="text">THE CONTENT BLOCKER FOR
-BLOCKING CREATIVE, WEB AND
-DESIGN ADS</string>
+PREMIER CREATIVE, WEB AND
+DESIGN CULTURE ADS</string>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
