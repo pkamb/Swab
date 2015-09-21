@@ -58,7 +58,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5859822F1BADD5940086654C /* swab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5859822F1BADD5940086654C /* Swab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		585982321BADD5940086654C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		585982371BADD5940086654C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		585982391BADD5940086654C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		585982301BADD5940086654C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5859822F1BADD5940086654C /* swab.app */,
+				5859822F1BADD5940086654C /* Swab.app */,
 				585982431BADD5940086654C /* swabTests.xctest */,
 				5859824E1BADD5940086654C /* swabUITests.xctest */,
 				585982641BADD9220086654C /* SwabContentBlocker.appex */,
@@ -175,9 +175,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5859822E1BADD5940086654C /* swab */ = {
+		5859822E1BADD5940086654C /* Swab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 585982571BADD5950086654C /* Build configuration list for PBXNativeTarget "swab" */;
+			buildConfigurationList = 585982571BADD5950086654C /* Build configuration list for PBXNativeTarget "Swab" */;
 			buildPhases = (
 				5859822B1BADD5940086654C /* Sources */,
 				5859822C1BADD5940086654C /* Frameworks */,
@@ -189,9 +189,9 @@
 			dependencies = (
 				5859826C1BADD9220086654C /* PBXTargetDependency */,
 			);
-			name = swab;
+			name = Swab;
 			productName = swab;
-			productReference = 5859822F1BADD5940086654C /* swab.app */;
+			productReference = 5859822F1BADD5940086654C /* Swab.app */;
 			productType = "com.apple.product-type.application";
 		};
 		585982421BADD5940086654C /* swabTests */ = {
@@ -285,7 +285,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5859822E1BADD5940086654C /* swab */,
+				5859822E1BADD5940086654C /* Swab */,
 				585982421BADD5940086654C /* swabTests */,
 				5859824D1BADD5940086654C /* swabUITests */,
 				585982631BADD9220086654C /* SwabContentBlocker */,
@@ -367,12 +367,12 @@
 /* Begin PBXTargetDependency section */
 		585982451BADD5940086654C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5859822E1BADD5940086654C /* swab */;
+			target = 5859822E1BADD5940086654C /* Swab */;
 			targetProxy = 585982441BADD5940086654C /* PBXContainerItemProxy */;
 		};
 		585982501BADD5940086654C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5859822E1BADD5940086654C /* swab */;
+			target = 5859822E1BADD5940086654C /* Swab */;
 			targetProxy = 5859824F1BADD5940086654C /* PBXContainerItemProxy */;
 		};
 		5859826C1BADD9220086654C /* PBXTargetDependency */ = {
@@ -593,7 +593,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		585982571BADD5950086654C /* Build configuration list for PBXNativeTarget "swab" */ = {
+		585982571BADD5950086654C /* Build configuration list for PBXNativeTarget "Swab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				585982581BADD5950086654C /* Debug */,
