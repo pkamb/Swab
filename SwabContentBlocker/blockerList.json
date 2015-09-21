@@ -267,5 +267,14 @@
         "trigger": {
             "url-filter": "typographica.org"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#thedeck"
+        },
+        "trigger": {
+            "url-filter": "veerle.duoh.com"
+        }
     }
 ]
