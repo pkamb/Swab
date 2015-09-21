@@ -123,5 +123,14 @@
         "trigger": {
             "url-filter": "kottke.org"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "small > a[href*='http://decknetwork.net']"
+        },
+        "trigger": {
+            "url-filter": "loopinsight.com"
+        }
     }
 ]
