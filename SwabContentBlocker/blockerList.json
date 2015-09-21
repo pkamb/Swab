@@ -195,5 +195,14 @@
         "trigger": {
             "url-filter": "thenounproject.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#deck-ad"
+        },
+        "trigger": {
+            "url-filter": "randsinrepose.com"
+        }
     }
 ]
