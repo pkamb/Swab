@@ -240,5 +240,14 @@
         "trigger": {
             "url-filter": "sixcolors.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "a[href*='http://decknetwork.net'][class='ads']"
+        },
+        "trigger": {
+            "url-filter": "swiss-miss.com"
+        }
     }
 ]
