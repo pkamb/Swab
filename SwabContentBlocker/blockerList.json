@@ -141,5 +141,14 @@
         "trigger": {
             "url-filter": "marco.org"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".advertisement.sidebar"
+        },
+        "trigger": {
+            "url-filter": "metafilter.com"
+        }
     }
 ]
