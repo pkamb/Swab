@@ -114,5 +114,14 @@
         "trigger": {
             "url-filter": "inessential.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "h4 > a[href*='http://decknetwork.net']"
+        },
+        "trigger": {
+            "url-filter": "kottke.org"
+        }
     }
 ]
