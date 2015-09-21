@@ -213,5 +213,14 @@
         "trigger": {
             "url-filter": "jasonsantamaria.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#sellout"
+        },
+        "trigger": {
+            "url-filter": "usethis.com"
+        }
     }
 ]
