@@ -96,5 +96,14 @@
         "trigger": {
             "url-filter": "greyscalegorilla.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".ads-credit"
+        },
+        "trigger": {
+            "url-filter": "hustwit.com"
+        }
     }
 ]
