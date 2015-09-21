@@ -168,5 +168,14 @@
         "trigger": {
             "url-filter": "themorningnews.org"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#header-ad"
+        },
+        "trigger": {
+            "url-filter": "motionographer.com/"
+        }
     }
 ]
