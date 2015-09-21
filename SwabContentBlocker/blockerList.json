@@ -42,5 +42,14 @@
         "trigger": {
             "url-filter": "coudal.com"
         }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#SidebarTheDeck"
+        },
+        "trigger": {
+            "url-filter": "daringfireball.net"
+        }
     }
 ]
