@@ -91,6 +91,9 @@ DESIGN CULTURE ADS</string>
                     </tableView>
                     <navigationItem key="navigationItem" title="Swab" id="36D-ez-4W6"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="headerText" destination="rSY-Fl-l1p" id="WbR-Yk-8NS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47F-QK-WhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

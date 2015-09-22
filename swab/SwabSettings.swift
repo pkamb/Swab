@@ -9,9 +9,17 @@
 import UIKit
 
 class SwabSettings: UITableViewController {
+    
+    @IBOutlet weak var headerText: UITextView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if (UIScreen.mainScreen().bounds.size.width <= 320) {
+            headerText!.font = UIFont(name: "Georgia", size: 19.0)
+        } else {
+            headerText!.font = UIFont(name: "Georgia", size: 22.0)
+        }
         
         self.tableView.backgroundColor = UIColor(red: 247/255.0, green:247/255.0, blue:247/255.0, alpha:1)
     }
