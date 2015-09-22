@@ -64,7 +64,20 @@ class SwabSettings: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if(indexPath.section == 0 && indexPath.row == 0) {
-            UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
+            let title = "ENABLE VIA SETTINGS"
+            var message = "Safari Content Blockers must be enabled via the Settings app"
+            message += "\n\nSettings → Safari → Content Blockers"
+            
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+            
+            let action = UIAlertAction(title: "I'll Enable Swab Manually", style: .Default, handler: nil)
+            alert.addAction(action)
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            // This URL will open the app's Settings page, not the Settings.app main page.
+            // In iOS 8+ the app Settings page is installed automatically/randomly.
+            //UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
         }
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
