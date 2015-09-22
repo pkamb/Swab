@@ -54,9 +54,9 @@ class SwabSettings: UITableViewController {
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return "Installation"
+            return "INSTALLATION"
         case 1:
-            return "Settings"
+            return "SETTINGS"
         default:
             return nil
         }
@@ -74,7 +74,7 @@ class SwabSettings: UITableViewController {
         view.tintColor = UIColor(red: 247/255.0, green:247/255.0, blue:247/255.0, alpha:1)
 
         let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        headerView.textLabel?.font = UIFont.systemFontOfSize(16.0)
+        headerView.textLabel?.font = UIFont(name: "Verdana", size: 12.0)
     }
     
     override func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
