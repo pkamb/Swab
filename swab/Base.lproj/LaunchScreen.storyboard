@@ -66,7 +66,7 @@ DESIGN CULTURE ADS</string>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>

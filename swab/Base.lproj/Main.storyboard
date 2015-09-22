@@ -7,7 +7,7 @@
         <!--Swab-->
         <scene sceneID="Leo-7X-0zc">
             <objects>
-                <tableViewController id="4Sh-AP-3Ip" customClass="SwabSettings" customModule="swab" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="4Sh-AP-3Ip" customClass="SwabSettings" customModule="Swab" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kLb-nf-u3P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,7 +106,7 @@ DESIGN CULTURE ADS</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
