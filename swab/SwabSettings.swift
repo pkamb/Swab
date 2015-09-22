@@ -82,7 +82,7 @@ class SwabSettings: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 40.0
+        return 30.0
     }
 
 }

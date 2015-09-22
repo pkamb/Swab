@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="WR2-To-aoS" userLabel="Header">
-                            <rect key="frame" x="0.0" y="64" width="375" height="150"/>
+                            <rect key="frame" x="0.0" y="64" width="375" height="140"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOL-VH-fXK" userLabel="Text Background">
@@ -42,7 +42,7 @@ DESIGN CULTURE ADS</string>
                             </subviews>
                             <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="bOL-VH-fXK" secondAttribute="bottom" constant="40" id="47W-JB-D4f"/>
+                                <constraint firstAttribute="bottom" secondItem="bOL-VH-fXK" secondAttribute="bottom" constant="30" id="47W-JB-D4f"/>
                                 <constraint firstItem="bOL-VH-fXK" firstAttribute="top" secondItem="WR2-To-aoS" secondAttribute="top" id="egq-ce-tUE"/>
                                 <constraint firstAttribute="trailing" secondItem="bOL-VH-fXK" secondAttribute="trailing" id="g2f-Ho-YeL"/>
                                 <constraint firstItem="bOL-VH-fXK" firstAttribute="leading" secondItem="WR2-To-aoS" secondAttribute="leading" id="g5H-4K-qFJ"/>
@@ -50,7 +50,7 @@ DESIGN CULTURE ADS</string>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="installation" textLabel="lXc-gR-Cln" style="IBUITableViewCellStyleDefault" id="zh1-7B-RV4" userLabel="Open Settings">
-                                <rect key="frame" x="0.0" y="242" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="232" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zh1-7B-RV4" id="jpL-J5-fvz">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
@@ -67,7 +67,7 @@ DESIGN CULTURE ADS</string>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="swabSetting" textLabel="dEP-cw-knG" style="IBUITableViewCellStyleDefault" id="Bgz-4a-YRy" userLabel="Setting Toggle">
-                                <rect key="frame" x="0.0" y="286" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="276" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bgz-4a-YRy" id="cwd-H3-OvR">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
