@@ -47,7 +47,7 @@ class SwabSettings: UITableViewController {
             return cell
         default:
             let cell = UITableViewCell.init(style: .Default, reuseIdentifier: nil)
-            return cell;
+            return cell
         }
     }
     
