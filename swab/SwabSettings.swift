@@ -16,9 +16,9 @@ class SwabSettings: UITableViewController {
         super.viewDidLoad()
         
         if (UIScreen.mainScreen().bounds.size.width <= 320) {
-            headerText!.font = UIFont(name: "Georgia", size: 19.0)
+            headerText!.font = UIFont(name: "Georgia", size: 24.0)
         } else {
-            headerText!.font = UIFont(name: "Georgia", size: 22.0)
+            headerText!.font = UIFont(name: "Georgia", size: 28.0)
         }
         
         self.tableView.backgroundColor = UIColor(red: 247/255.0, green:247/255.0, blue:247/255.0, alpha:1)
