@@ -29,6 +29,8 @@ class SwabSettings: UITableViewController {
         }
         
         self.tableView.backgroundColor = UIColor(red: 247/255.0, green:247/255.0, blue:247/255.0, alpha:1)
+        self.tableView.estimatedRowHeight = 44
+        self.tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -124,6 +126,10 @@ class SwabSettings: UITableViewController {
     
     override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 30.0
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
 
 }
