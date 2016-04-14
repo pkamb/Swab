@@ -15,8 +15,9 @@ class SwabSettings: UITableViewController {
     private enum Section: Int {
         case Installation
         case Settings
+        case Links
         
-        static let allSections = [Installation, Settings]
+        static let allSections = [Installation, Settings, Links]
     }
 
     override func viewDidLoad() {
@@ -45,6 +46,8 @@ class SwabSettings: UITableViewController {
             return 1
         case .Settings:
             return 1
+        case .Links:
+            return 4
         }
     }
 
@@ -65,8 +68,22 @@ class SwabSettings: UITableViewController {
             cell.accessoryView = switchControl
             
             return cell
-        default:
-            let cell = UITableViewCell.init(style: .Default, reuseIdentifier: nil)
+        case (.Links):
+            let cell = tableView.dequeueReusableCellWithIdentifier("link", forIndexPath: indexPath)
+            
+            switch indexPath.row {
+            case 0:
+                cell.textLabel?.text = "Website"
+            case 1:
+                cell.textLabel?.text = "GitHub"
+            case 2:
+                cell.textLabel?.text = "Twitter"
+            case 3:
+                cell.textLabel?.text = "App Store"
+            default:
+                break
+            }
+            
             return cell
         }
     }
@@ -79,6 +96,8 @@ class SwabSettings: UITableViewController {
             return "INSTALLATION"
         case .Settings:
             return "SETTINGS"
+        case .Links:
+            return "LINKS"
         }
     }
     
@@ -106,7 +125,25 @@ class SwabSettings: UITableViewController {
             // TODO: toggle Content Blocking via this switch?
             
             break
-        default:
+        case (.Links):
+            var urlString:String
+            
+            switch indexPath.row {
+            case 0:
+                urlString = "http://swabthe.com"
+            case 1:
+                urlString = "https://github.com/pkamb/swab"
+            case 2:
+                urlString = "https://twitter.com/SwabThe"
+            case 3:
+                urlString = "https://itunes.apple.com/us/app/swab-content-blocker-creative/id1042086002&mt=8"
+            default:
+                urlString = ""
+                break
+            }
+            
+            UIApplication.sharedApplication().openURL(NSURL(string: urlString)!)
+            
             break
         }
         
