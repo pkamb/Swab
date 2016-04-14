@@ -11,6 +11,13 @@ import UIKit
 class SwabSettings: UITableViewController {
     
     @IBOutlet weak var headerText: UITextView?
+    
+    private enum Section: Int {
+        case Installation
+        case Settings
+        
+        static let allSections = [Installation, Settings]
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,26 +32,29 @@ class SwabSettings: UITableViewController {
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 2
+        return Section.allSections.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let section = Section(rawValue: section)!
+        
         switch section {
-        case 0:
+        case .Installation:
             return 1
-        case 1:
+        case .Settings:
             return 1
-        default:
-            return 0
         }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        switch (indexPath.section, indexPath.row) {
-        case (0, 0):
+        let section = Section(rawValue: indexPath.section)!
+        
+        switch (section) {
+        case (.Installation):
             let cell = tableView.dequeueReusableCellWithIdentifier("installation", forIndexPath: indexPath)
+            
             return cell
-        case (1, 0):
+        case (.Settings):
             let cell = tableView.dequeueReusableCellWithIdentifier("swabSetting", forIndexPath: indexPath)
             
             let switchControl = UISwitch(frame: CGRectZero)
@@ -60,18 +70,21 @@ class SwabSettings: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let section = Section(rawValue: section)!
+        
         switch section {
-        case 0:
+        case .Installation:
             return "INSTALLATION"
-        case 1:
+        case .Settings:
             return "SETTINGS"
-        default:
-            return nil
         }
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if(indexPath.section == 0 && indexPath.row == 0) {
+        let section = Section(rawValue: indexPath.section)!
+        
+        switch (section) {
+        case (.Installation):
             let title = "ENABLE VIA SETTINGS"
             var message = "Safari Content Blockers must be enabled via the Settings app"
             message += "\n\nSettings → Safari → Content Blockers"
@@ -86,6 +99,13 @@ class SwabSettings: UITableViewController {
             // This URL will open the app's Settings page, not the Settings.app main page.
             // In iOS 8+ the app Settings page is installed automatically/randomly.
             //UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
+        case (.Settings):
+            
+            // TODO: toggle Content Blocking via this switch?
+            
+            break
+        default:
+            break
         }
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
