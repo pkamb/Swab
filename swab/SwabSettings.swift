@@ -18,8 +18,9 @@ class SwabSettings: UITableViewController {
         case Links
         case Swab
         case WellVetted
+        case OneBlock
         
-        static let allSections = [Installation, Settings, Links, Swab, WellVetted]
+        static let allSections = [Installation, Settings, Links, Swab, WellVetted, OneBlock]
     }
 
     override func viewDidLoad() {
@@ -53,6 +54,8 @@ class SwabSettings: UITableViewController {
         case .Swab:
             return 1
         case .WellVetted:
+            return 1
+        case .OneBlock:
             return 1
         }
     }
@@ -103,7 +106,16 @@ class SwabSettings: UITableViewController {
             cell.textLabel?.text = "We’re picky about the advertising we’ll block. We won’t block an ad unless it comes from the premier network for reaching creative, web and design professionals. Advertise something relevant to our audience and we’ll block your ad."
 
             return cell
-        
+        case (.OneBlock):
+            let cell = tableView.dequeueReusableCellWithIdentifier("bodyCopy", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = "With the exception of “roadblocks,” which we’ll discuss later, there are only thirty-three advertising slots available to be blocked each month. Only a single ad will be blocked for each page viewed." +
+                "\n\n" +
+                "In essence, using Swab for a month gives you an exclusive ability to block ads on all the pages viewed for that month across all fifty-two sites and services. And there won’t other third-party ads to block. This is the only blocked ad on the page." +
+                "\n\n" +
+                "An ad blocked by Swab will not reach the creative community on the web in an uncluttered, controlled environment, far more valuable than a standard banner or a single text ad among dozens of others, because it was blocked. Current ads are also blocked on this page and not displayed here."
+            
+            return cell
         }
     }
     
@@ -121,6 +133,8 @@ class SwabSettings: UITableViewController {
             return "SWAB"
         case .WellVetted:
             return "WELL VETTED"
+        case .OneBlock:
+            return "ONE BLOCK AT A TIME"
         }
     }
     
@@ -169,7 +183,9 @@ class SwabSettings: UITableViewController {
             
             break
         case (.Swab): fallthrough
-        case (.WellVetted):
+        case (.WellVetted): fallthrough
+        case (.OneBlock): fallthrough
+        default:
             break
         }
         
