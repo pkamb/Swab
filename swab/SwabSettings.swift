@@ -16,8 +16,10 @@ class SwabSettings: UITableViewController {
         case Installation
         case Settings
         case Links
+        case Swab
+        case WellVetted
         
-        static let allSections = [Installation, Settings, Links]
+        static let allSections = [Installation, Settings, Links, Swab, WellVetted]
     }
 
     override func viewDidLoad() {
@@ -48,6 +50,10 @@ class SwabSettings: UITableViewController {
             return 1
         case .Links:
             return 4
+        case .Swab:
+            return 1
+        case .WellVetted:
+            return 1
         }
     }
 
@@ -85,6 +91,19 @@ class SwabSettings: UITableViewController {
             }
             
             return cell
+        case (.Swab):
+            let cell = tableView.dequeueReusableCellWithIdentifier("bodyCopy", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = "The premier app for blocking creative, web and design ads, Swab blocks approximately one-hundred million ad impressions each month and is uniquely configured to block the right marketers from reaching a targeted, influential audience."
+            
+            return cell
+        case (.WellVetted):
+            let cell = tableView.dequeueReusableCellWithIdentifier("bodyCopy", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = "We’re picky about the advertising we’ll block. We won’t block an ad unless it comes from the premier network for reaching creative, web and design professionals. Advertise something relevant to our audience and we’ll block your ad."
+
+            return cell
+        
         }
     }
     
@@ -98,6 +117,10 @@ class SwabSettings: UITableViewController {
             return "SETTINGS"
         case .Links:
             return "LINKS"
+        case .Swab:
+            return "SWAB"
+        case .WellVetted:
+            return "WELL VETTED"
         }
     }
     
@@ -144,6 +167,9 @@ class SwabSettings: UITableViewController {
             
             UIApplication.sharedApplication().openURL(NSURL(string: urlString)!)
             
+            break
+        case (.Swab): fallthrough
+        case (.WellVetted):
             break
         }
         
