@@ -23,8 +23,9 @@ class SwabSettings: UITableViewController {
         case InTheDetails
         case Pricing
         case DareYou
+        case Contact
         
-        static let allSections = [Installation, Settings, Links, Swab, WellVetted, OneBlock, CostPerBlock, InTheDetails, Pricing, DareYou]
+        static let allSections = [Installation, Settings, Links, Swab, WellVetted, OneBlock, CostPerBlock, InTheDetails, Pricing, DareYou, Contact]
     }
 
     override func viewDidLoad() {
@@ -61,6 +62,7 @@ class SwabSettings: UITableViewController {
         case .InTheDetails: fallthrough
         case .Pricing: fallthrough
         case .DareYou: fallthrough
+        case .Contact: fallthrough
         default:
             return 1
         }
@@ -152,6 +154,12 @@ class SwabSettings: UITableViewController {
                 "Swab was a fun app to build over the weekend. I’ll leave the ad-blocking hot takes to others."
             
             return cell
+        case (.Contact):
+            let cell = tableView.dequeueReusableCellWithIdentifier("bodyCopy", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = "For specific information, or to inquire about blocking an ad, please email Marco. Thank you."
+            
+            return cell
         }
     }
     
@@ -179,6 +187,8 @@ class SwabSettings: UITableViewController {
             return "PRICING AND ROADBLOCKS"
         case .DareYou:
             return "I DARE YOU TO DEFEND IT"
+        case .Contact:
+            return "CONTACT"
         }
     }
     
@@ -232,6 +242,7 @@ class SwabSettings: UITableViewController {
         case (.InTheDetails): fallthrough
         case (.Pricing): fallthrough
         case (.DareYou): fallthrough
+        case (.Contact): fallthrough
         default:
             break
         }
