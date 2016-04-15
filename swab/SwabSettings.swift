@@ -20,8 +20,9 @@ class SwabSettings: UITableViewController {
         case WellVetted
         case OneBlock
         case CostPerBlock
+        case InTheDetails
         
-        static let allSections = [Installation, Settings, Links, Swab, WellVetted, OneBlock, CostPerBlock]
+        static let allSections = [Installation, Settings, Links, Swab, WellVetted, OneBlock, CostPerBlock, InTheDetails]
     }
 
     override func viewDidLoad() {
@@ -55,6 +56,7 @@ class SwabSettings: UITableViewController {
         case .Swab: fallthrough
         case .WellVetted: fallthrough
         case .OneBlock: fallthrough
+        case .InTheDetails: fallthrough
         default:
             return 1
         }
@@ -124,6 +126,12 @@ class SwabSettings: UITableViewController {
             "The loyal, regular blockers of the network’s ads and services consist of web publishers, writers, developers, editors, reporters and bloggers as well as influential designers and art directors. Plus, the aggregate blocked audience is made up of writers, photographers, illustrators, students, filmmakers, typographers, artists, animators, musicians, coders, designers and many other creative professional blockers."
 
             return cell
+        case (.InTheDetails):
+            let cell = tableView.dequeueReusableCellWithIdentifier("bodyCopy", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = "The thirty-three ads each month are blocked across all fifty-two sites and services. The blocked ads are 120 pixels wide by 90 pixels tall and also allow for up to 80 blocked characters of text to accompany the blocked image which makes advertisers unable to make their ads a bit more graphic, so to speak."
+            
+            return cell
         }
     }
     
@@ -145,6 +153,8 @@ class SwabSettings: UITableViewController {
             return "ONE BLOCK AT A TIME"
         case .CostPerBlock:
             return "COST PER BLOCK"
+        case .InTheDetails:
+            return "IN THE DETAILS"
         }
     }
     
@@ -195,6 +205,7 @@ class SwabSettings: UITableViewController {
         case (.Swab): fallthrough
         case (.WellVetted): fallthrough
         case (.OneBlock): fallthrough
+        case (.InTheDetails): fallthrough
         default:
             break
         }
