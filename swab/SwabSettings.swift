@@ -21,8 +21,9 @@ class SwabSettings: UITableViewController {
         case OneBlock
         case CostPerBlock
         case InTheDetails
+        case Pricing
         
-        static let allSections = [Installation, Settings, Links, Swab, WellVetted, OneBlock, CostPerBlock, InTheDetails]
+        static let allSections = [Installation, Settings, Links, Swab, WellVetted, OneBlock, CostPerBlock, InTheDetails, Pricing]
     }
 
     override func viewDidLoad() {
@@ -57,6 +58,7 @@ class SwabSettings: UITableViewController {
         case .WellVetted: fallthrough
         case .OneBlock: fallthrough
         case .InTheDetails: fallthrough
+        case .Pricing: fallthrough
         default:
             return 1
         }
@@ -132,6 +134,12 @@ class SwabSettings: UITableViewController {
             cell.textLabel?.text = "The thirty-three ads each month are blocked across all fifty-two sites and services. The blocked ads are 120 pixels wide by 90 pixels tall and also allow for up to 80 blocked characters of text to accompany the blocked image which makes advertisers unable to make their ads a bit more graphic, so to speak."
             
             return cell
+        case (.Pricing):
+            let cell = tableView.dequeueReusableCellWithIdentifier("bodyCopy", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = "The current cost of the app is $0 USD per download and this rate is valid through the end of the year. Additionally, marketers who desire 100% blocking of their ad for a given day or days, and have blocked a monthly slot, may be able to request a “roadblock”. Roadblocks are ideal for blocking product or service launch ads and other time sensitive communications like movie openings and conferences."
+            
+            return cell
         }
     }
     
@@ -155,6 +163,8 @@ class SwabSettings: UITableViewController {
             return "COST PER BLOCK"
         case .InTheDetails:
             return "IN THE DETAILS"
+        case .Pricing:
+            return "PRICING AND ROADBLOCKS"
         }
     }
     
@@ -206,6 +216,7 @@ class SwabSettings: UITableViewController {
         case (.WellVetted): fallthrough
         case (.OneBlock): fallthrough
         case (.InTheDetails): fallthrough
+        case (.Pricing): fallthrough
         default:
             break
         }
