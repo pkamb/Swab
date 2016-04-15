@@ -22,8 +22,9 @@ class SwabSettings: UITableViewController {
         case CostPerBlock
         case InTheDetails
         case Pricing
+        case DareYou
         
-        static let allSections = [Installation, Settings, Links, Swab, WellVetted, OneBlock, CostPerBlock, InTheDetails, Pricing]
+        static let allSections = [Installation, Settings, Links, Swab, WellVetted, OneBlock, CostPerBlock, InTheDetails, Pricing, DareYou]
     }
 
     override func viewDidLoad() {
@@ -59,6 +60,7 @@ class SwabSettings: UITableViewController {
         case .OneBlock: fallthrough
         case .InTheDetails: fallthrough
         case .Pricing: fallthrough
+        case .DareYou: fallthrough
         default:
             return 1
         }
@@ -140,6 +142,16 @@ class SwabSettings: UITableViewController {
             cell.textLabel?.text = "The current cost of the app is $0 USD per download and this rate is valid through the end of the year. Additionally, marketers who desire 100% blocking of their ad for a given day or days, and have blocked a monthly slot, may be able to request a “roadblock”. Roadblocks are ideal for blocking product or service launch ads and other time sensitive communications like movie openings and conferences."
             
             return cell
+        case (.DareYou):
+            let cell = tableView.dequeueReusableCellWithIdentifier("bodyCopy", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = "Swab is built with Swift, and as we say “The best way to learn something new is to make something with it.”" +
+                "\n\n" +
+                "App Extensions are also New To Me and great for building a quick, useful iOS utility app." +
+                "\n\n" +
+                "Swab was a fun app to build over the weekend. I’ll leave the ad-blocking hot takes to others."
+            
+            return cell
         }
     }
     
@@ -165,6 +177,8 @@ class SwabSettings: UITableViewController {
             return "IN THE DETAILS"
         case .Pricing:
             return "PRICING AND ROADBLOCKS"
+        case .DareYou:
+            return "I DARE YOU TO DEFEND IT"
         }
     }
     
@@ -217,6 +231,7 @@ class SwabSettings: UITableViewController {
         case (.OneBlock): fallthrough
         case (.InTheDetails): fallthrough
         case (.Pricing): fallthrough
+        case (.DareYou): fallthrough
         default:
             break
         }
