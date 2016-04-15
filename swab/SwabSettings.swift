@@ -19,8 +19,9 @@ class SwabSettings: UITableViewController {
         case Swab
         case WellVetted
         case OneBlock
+        case CostPerBlock
         
-        static let allSections = [Installation, Settings, Links, Swab, WellVetted, OneBlock]
+        static let allSections = [Installation, Settings, Links, Swab, WellVetted, OneBlock, CostPerBlock]
     }
 
     override func viewDidLoad() {
@@ -51,11 +52,10 @@ class SwabSettings: UITableViewController {
             return 1
         case .Links:
             return 4
-        case .Swab:
-            return 1
-        case .WellVetted:
-            return 1
-        case .OneBlock:
+        case .Swab: fallthrough
+        case .WellVetted: fallthrough
+        case .OneBlock: fallthrough
+        default:
             return 1
         }
     }
@@ -116,6 +116,14 @@ class SwabSettings: UITableViewController {
                 "An ad blocked by Swab will not reach the creative community on the web in an uncluttered, controlled environment, far more valuable than a standard banner or a single text ad among dozens of others, because it was blocked. Current ads are also blocked on this page and not displayed here."
             
             return cell
+        case (.CostPerBlock):
+            let cell = tableView.dequeueReusableCellWithIdentifier("bodyCopy", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = "We’re not blocking ads based on page views or hits or click-through, but if we were, the CPM for a block here would be priced well below industry norms. Most media who say “we don’t block on the numbers” do so because they don’t have the numbers to support their rates. That’s certainly not the case with Swab, as a group the apps block over one hundred million impressions each month. All that being said, it’s not about “cost-per-thousand,” it’s about “cost-per-block.”" +
+            "\n\n" +
+            "The loyal, regular blockers of the network’s ads and services consist of web publishers, writers, developers, editors, reporters and bloggers as well as influential designers and art directors. Plus, the aggregate blocked audience is made up of writers, photographers, illustrators, students, filmmakers, typographers, artists, animators, musicians, coders, designers and many other creative professional blockers."
+
+            return cell
         }
     }
     
@@ -135,6 +143,8 @@ class SwabSettings: UITableViewController {
             return "WELL VETTED"
         case .OneBlock:
             return "ONE BLOCK AT A TIME"
+        case .CostPerBlock:
+            return "COST PER BLOCK"
         }
     }
     
