@@ -176,7 +176,7 @@ class SwabSettings: UITableViewController {
         case .Swab:
             return "SWAB"
         case .WellVetted:
-            return "WELL VETTED"
+            return "WELL-VETTED"
         case .OneBlock:
             return "ONE BLOCK AT A TIME"
         case .CostPerBlock:
@@ -211,6 +211,7 @@ class SwabSettings: UITableViewController {
             // This URL will open the app's Settings page, not the Settings.app main page.
             // In iOS 8+ the app Settings page is installed automatically/randomly.
             //UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
+            
         case (.Settings):
             
             // TODO: toggle Content Blocking via this switch?
