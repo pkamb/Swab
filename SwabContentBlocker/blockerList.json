@@ -10,6 +10,15 @@
     {
         "action": {
             "type": "css-display-none",
+            "selector": "#fake_ad"
+        },
+            "trigger": {
+            "url-filter": "swabthe.com"
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
             "selector": "#deck-target"
         },
         "trigger": {
