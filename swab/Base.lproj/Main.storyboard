@@ -131,7 +131,7 @@ DESIGN CULTURE ADS</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47F-QK-WhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452.5" y="172.5"/>
+            <point key="canvasLocation" x="152.5" y="171.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QqY-S7-HmR">
