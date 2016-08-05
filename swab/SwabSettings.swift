@@ -119,7 +119,7 @@ class SwabSettings: UITableViewController {
             
             cell.textLabel?.text = "With the exception of “roadblocks,” which we’ll discuss later, there are only thirty-three advertising slots available to be blocked each month. Only a single ad will be blocked for each page viewed." +
                 "\n\n" +
-                "In essence, using Swab for a month gives you an exclusive ability to block ads on all the pages viewed for that month across all fifty-two sites and services. And there won’t other third-party ads to block. This is the only blocked ad on the page." +
+                "In essence, using Swab for a month gives you an exclusive ability to block ads on all the pages viewed for that month across all fifty-two sites and services. And there won’t be other third-party ads to block. This is the only blocked ad on the page." +
                 "\n\n" +
                 "An ad blocked by Swab will not reach the creative community on the web in an uncluttered, controlled environment, far more valuable than a standard banner or a single text ad among dozens of others, because it was blocked. Current ads are also blocked on this page and not displayed here."
             

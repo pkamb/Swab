@@ -26,7 +26,7 @@ are only thirty-three advertising slots available to be blocked each month.
 
 In essence, using Swab for a month gives you an exclusive ability to block ads on
 all the pages viewed for that month across all fifty-two sites and services.
-And there won&rsquo;t other third-party ads to block. This is the only blocked ad on the page.
+And there won&rsquo;t be other third-party ads to block. This is the only blocked ad on the page.
 
 An ad blocked by Swab will not reach the creative community on the web in an
 uncluttered, controlled environment, far more valuable than a standard
