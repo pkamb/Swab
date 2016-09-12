@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import swab
+@testable import Swab
 
 class swabTests: XCTestCase {
     
