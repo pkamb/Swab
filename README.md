@@ -4,21 +4,21 @@ Available [on the App Store](https://geo.itunes.apple.com/us/app/swab-content-bl
 
 ---
 
-#THE CONTENT BLOCKER OF<br />CREATIVE, WEB AND<br />DESIGN CULTURE ADS
+# THE CONTENT BLOCKER OF<br />CREATIVE, WEB AND<br />DESIGN CULTURE ADS
 
 The premier app for blocking creative, web and design ads, Swab 
 blocks approximately one-hundred million ad impressions each month 
 and is uniquely configured to block the right marketers from reaching
 a targeted, influential audience.
 
-##WELL-VETTED
+## WELL-VETTED
 
 We&rsquo;re picky about the advertising we&rsquo;ll block. **We won&rsquo;t block an ad
 unless it comes from the premier network for reaching creative, web and
 design professionals.** Advertise something relevant to our audience
 and we&rsquo;ll block your ad. 
 
-##ONE BLOCK AT A TIME
+## ONE BLOCK AT A TIME
 
 With the exception of &ldquo;roadblocks,&rdquo; which we&rsquo;ll discuss later, there
 are only thirty-three advertising slots available to be blocked each month.
@@ -33,7 +33,7 @@ uncluttered, controlled environment, far more valuable than a standard
 banner or a single text ad among dozens of others, because it was blocked. Current ads
 are also blocked on this page and not displayed here.
 
-##COST PER BLOCK
+## COST PER BLOCK
 
 We&rsquo;re not blocking ads based on page views or hits or
 click-through, but if we were, the CPM for a block here would be
@@ -49,7 +49,7 @@ of writers, photographers, illustrators, students, filmmakers, typographers,
 artists, animators, musicians, coders, designers and many other
 creative professional blockers.
 
-##IN THE DETAILS
+## IN THE DETAILS
 
 The thirty-three ads each month are blocked across all fifty-two
 sites and services. The blocked ads are 120 pixels wide by 90 pixels tall and
@@ -57,14 +57,14 @@ also allow for up to 80 blocked characters of text to accompany the blocked imag
 advertisers unable to make their ads a bit more graphic, so to speak.
 
 
-##PRICING AND ROADBLOCKS
+## PRICING AND ROADBLOCKS
 
 The current cost of the app is $0 USD per download and
 this rate is valid through the end of the year. Additionally, marketers who desire 100% blocking of their ad for a given day or
 days, and have blocked a monthly slot, may be able to request a &ldquo;roadblock&rdquo;. Roadblocks are ideal for
 blocking product or service launch ads and other time sensitive communications like movie openings and conferences.
 
-##I DARE YOU TO DEFEND IT
+## I DARE YOU TO DEFEND IT
 
 Swab is built with Swift, and as we say &ldquo;The best way to learn something new is to make something with it.&rdquo;
 
@@ -72,6 +72,6 @@ Swab is built with Swift, and as we say &ldquo;The best way to learn something n
 
 Swab was a fun app to build over the weekend. I&rsquo;ll leave the ad-blocking hot takes to others.
 			
-##CONTACT
+## CONTACT
 
 For specific information, or to inquire about blocking an ad, please email Marco. Thank you.
