@@ -115,7 +115,6 @@ class SwabSettings: UITableViewController {
         case .installation:
             self.present(SwabSettings.enableViaSettingsAlert(), animated: true, completion: nil)
         case .settings:
-            // TODO: toggle Content Blocking via this switch?
             break
         case .links:
             if let link = Link(rawValue: indexPath.row) {
