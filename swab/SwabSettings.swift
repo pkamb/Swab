@@ -42,12 +42,9 @@ class SwabSettings: UITableViewController {
         let section = Section(rawValue: section)!
         
         switch section {
-        case .installation:
-            return 1
-        case .settings:
-            return 1
-        case .links:
-            return 4
+        case .installation: return 1
+        case .settings:     return 1
+        case .links:        return 4
         }
     }
 
