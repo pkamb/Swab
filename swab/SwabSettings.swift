@@ -98,8 +98,7 @@ class SwabSettings: UITableViewController {
             switchControl.isEnabled = false
             cell.accessoryView = switchControl
         case .links:
-            let link = Link(rawValue: indexPath.row)
-            cell.textLabel?.text = link?.title
+            cell.textLabel?.text = Link(rawValue: indexPath.row)?.title
         }
         
         return cell
