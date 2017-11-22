@@ -113,8 +113,7 @@ class SwabSettings: UITableViewController {
         
         switch section {
         case .installation:
-            let alert = SwabSettings.enableViaSettingsAlert()
-            self.present(alert, animated: true, completion: nil)            
+            self.present(SwabSettings.enableViaSettingsAlert(), animated: true, completion: nil)
         case .settings:
             // TODO: toggle Content Blocking via this switch?
             break
