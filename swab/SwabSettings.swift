@@ -56,7 +56,15 @@ class SwabSettings: UITableViewController {
             case .appStore: return "App Store"
             }
         }
-
+        
+        var urlString: String {
+            switch self {
+            case .website:  return "http://swabthe.com"
+            case .github:   return "https://github.com/pkamb/swab"
+            case .twitter:  return "https://twitter.com/SwabThe"
+            case .appStore: return "https://itunes.apple.com/us/app/swab-content-blocker-creative/id1042086002&mt=8"
+            }
+        }
     }
 
     override func viewDidLoad() {
@@ -125,17 +133,9 @@ class SwabSettings: UITableViewController {
             // TODO: toggle Content Blocking via this switch?
             break
         case (.links):
-            var urlString:String
-            
-            switch (indexPath as NSIndexPath).row {
-            case 0: urlString = "http://swabthe.com"
-            case 1: urlString = "https://github.com/pkamb/swab"
-            case 2: urlString = "https://twitter.com/SwabThe"
-            case 3: urlString = "https://itunes.apple.com/us/app/swab-content-blocker-creative/id1042086002&mt=8"
-            default:urlString = ""
+            if let link = Link(rawValue: indexPath.row) {
+                UIApplication.shared.openURL(URL(string: link.urlString)!)
             }
-            
-            UIApplication.shared.openURL(URL(string: urlString)!)
         }
         
         tableView.deselectRow(at: indexPath, animated: true)
