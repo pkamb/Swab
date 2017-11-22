@@ -109,7 +109,9 @@ class SwabSettings: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let section = Section(rawValue: indexPath.row)!
+        guard let section = Section(rawValue: indexPath.row) else {
+            return
+        }
         
         switch section {
         case .installation:
