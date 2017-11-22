@@ -12,7 +12,7 @@ class SwabSettings: UITableViewController {
     
     @IBOutlet weak var headerText: UITextView?
     
-    fileprivate enum Section: Int {
+    enum Section: Int {
         case installation
         case settings
         case links
