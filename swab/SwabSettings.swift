@@ -89,15 +89,15 @@ class SwabSettings: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: section.cellIdentifier, for: indexPath)
         
-        switch (section) {
-        case (.installation):
+        switch section {
+        case .installation:
             break
-        case (.settings):
+        case .settings:
             let switchControl = UISwitch(frame: CGRect.zero)
             switchControl.isOn = true
             switchControl.isEnabled = false
             cell.accessoryView = switchControl
-        case (.links):
+        case .links:
             let link = Link(rawValue: indexPath.row)
             cell.textLabel?.text = link?.title
         }
@@ -112,8 +112,8 @@ class SwabSettings: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let section = Section(rawValue: (indexPath as NSIndexPath).section)!
         
-        switch (section) {
-        case (.installation):
+        switch section {
+        case .installation:
             let title = "ENABLE VIA SETTINGS"
             var message = "Safari Content Blockers must be enabled via the Settings app"
             message += "\n\nSettings → Safari → Content Blockers"
@@ -129,10 +129,10 @@ class SwabSettings: UITableViewController {
             // In iOS 8+ the app Settings page is installed automatically/randomly.
             //UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
             
-        case (.settings):
+        case .settings:
             // TODO: toggle Content Blocking via this switch?
             break
-        case (.links):
+        case .links:
             if let link = Link(rawValue: indexPath.row) {
                 UIApplication.shared.openURL(URL(string: link.urlString)!)
             }
