@@ -114,12 +114,7 @@ class SwabSettings: UITableViewController {
         switch section {
         case .installation:
             let alert = SwabSettings.enableViaSettingsAlert()
-            self.present(alert, animated: true, completion: nil)
-            
-            // This URL will open the app's Settings page, not the Settings.app main page.
-            // In iOS 8+ the app Settings page is installed automatically/randomly.
-            //UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
-            
+            self.present(alert, animated: true, completion: nil)            
         case .settings:
             // TODO: toggle Content Blocking via this switch?
             break
