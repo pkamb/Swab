@@ -51,22 +51,20 @@ class SwabSettings: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let section = Section(rawValue: (indexPath as NSIndexPath).section)!
         
+        let cell: UITableViewCell
+        
         switch (section) {
         case (.installation):
-            let cell = tableView.dequeueReusableCell(withIdentifier: "installation", for: indexPath)
-            
-            return cell
+            cell = tableView.dequeueReusableCell(withIdentifier: "installation", for: indexPath)
         case (.settings):
-            let cell = tableView.dequeueReusableCell(withIdentifier: "swabSetting", for: indexPath)
+            cell = tableView.dequeueReusableCell(withIdentifier: "swabSetting", for: indexPath)
             
             let switchControl = UISwitch(frame: CGRect.zero)
             switchControl.isOn = true
             switchControl.isEnabled = false
             cell.accessoryView = switchControl
-            
-            return cell
         case (.links):
-            let cell = tableView.dequeueReusableCell(withIdentifier: "link", for: indexPath)
+            cell = tableView.dequeueReusableCell(withIdentifier: "link", for: indexPath)
             
             switch (indexPath as NSIndexPath).row {
             case 0:
@@ -80,9 +78,9 @@ class SwabSettings: UITableViewController {
             default:
                 break
             }
-            
-            return cell
         }
+        
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
