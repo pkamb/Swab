@@ -67,16 +67,11 @@ class SwabSettings: UITableViewController {
             cell = tableView.dequeueReusableCell(withIdentifier: "link", for: indexPath)
             
             switch (indexPath as NSIndexPath).row {
-            case 0:
-                cell.textLabel?.text = "Website"
-            case 1:
-                cell.textLabel?.text = "GitHub"
-            case 2:
-                cell.textLabel?.text = "Twitter"
-            case 3:
-                cell.textLabel?.text = "App Store"
-            default:
-                break
+            case 0: cell.textLabel?.text = "Website"
+            case 1: cell.textLabel?.text = "GitHub"
+            case 2: cell.textLabel?.text = "Twitter"
+            case 3: cell.textLabel?.text = "App Store"
+            default: break
             }
         }
         
@@ -87,12 +82,9 @@ class SwabSettings: UITableViewController {
         let section = Section(rawValue: section)!
         
         switch section {
-        case .installation:
-            return "INSTALLATION"
-        case .settings:
-            return "SETTINGS"
-        case .links:
-            return "LINKS"
+        case .installation: return "INSTALLATION"
+        case .settings:     return "SETTINGS"
+        case .links:        return "LINKS"
         }
     }
     
@@ -117,31 +109,20 @@ class SwabSettings: UITableViewController {
             //UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
             
         case (.settings):
-            
             // TODO: toggle Content Blocking via this switch?
-            
             break
         case (.links):
             var urlString:String
             
             switch (indexPath as NSIndexPath).row {
-            case 0:
-                urlString = "http://swabthe.com"
-            case 1:
-                urlString = "https://github.com/pkamb/swab"
-            case 2:
-                urlString = "https://twitter.com/SwabThe"
-            case 3:
-                urlString = "https://itunes.apple.com/us/app/swab-content-blocker-creative/id1042086002&mt=8"
-            default:
-                urlString = ""
-                break
+            case 0: urlString = "http://swabthe.com"
+            case 1: urlString = "https://github.com/pkamb/swab"
+            case 2: urlString = "https://twitter.com/SwabThe"
+            case 3: urlString = "https://itunes.apple.com/us/app/swab-content-blocker-creative/id1042086002&mt=8"
+            default:urlString = ""
             }
             
             UIApplication.shared.openURL(URL(string: urlString)!)
-            
-            break
-            
         }
         
         tableView.deselectRow(at: indexPath, animated: true)
