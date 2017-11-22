@@ -25,6 +25,14 @@ class SwabSettings: UITableViewController {
             }
         }
         
+        var cellIdentifier: String {
+            switch self {
+            case .installation: return "installation"
+            case .settings:     return "swabSetting"
+            case .links:        return "link"
+            }
+        }
+        
         var numberOfRows: Int {
             switch self {
             case .installation: return 1
@@ -54,21 +62,17 @@ class SwabSettings: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let section = Section(rawValue: (indexPath as NSIndexPath).section)!
         
-        let cell: UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: section.cellIdentifier, for: indexPath)
         
         switch (section) {
         case (.installation):
-            cell = tableView.dequeueReusableCell(withIdentifier: "installation", for: indexPath)
+            break
         case (.settings):
-            cell = tableView.dequeueReusableCell(withIdentifier: "swabSetting", for: indexPath)
-            
             let switchControl = UISwitch(frame: CGRect.zero)
             switchControl.isOn = true
             switchControl.isEnabled = false
             cell.accessoryView = switchControl
         case (.links):
-            cell = tableView.dequeueReusableCell(withIdentifier: "link", for: indexPath)
-            
             switch (indexPath as NSIndexPath).row {
             case 0: cell.textLabel?.text = "Website"
             case 1: cell.textLabel?.text = "GitHub"
