@@ -41,6 +41,23 @@ class SwabSettings: UITableViewController {
             }
         }
     }
+    
+    enum Link: Int {
+        case website
+        case github
+        case twitter
+        case appStore
+        
+        var title: String {
+            switch self {
+            case .website:  return "Website"
+            case .github:   return "GitHub"
+            case .twitter:  return "Twitter"
+            case .appStore: return "App Store"
+            }
+        }
+
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,13 +90,8 @@ class SwabSettings: UITableViewController {
             switchControl.isEnabled = false
             cell.accessoryView = switchControl
         case (.links):
-            switch (indexPath as NSIndexPath).row {
-            case 0: cell.textLabel?.text = "Website"
-            case 1: cell.textLabel?.text = "GitHub"
-            case 2: cell.textLabel?.text = "Twitter"
-            case 3: cell.textLabel?.text = "App Store"
-            default: break
-            }
+            let link = Link(rawValue: indexPath.row)
+            cell.textLabel?.text = link?.title
         }
         
         return cell
