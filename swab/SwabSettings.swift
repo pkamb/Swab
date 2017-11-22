@@ -16,8 +16,6 @@ class SwabSettings: UITableViewController {
         case installation
         case settings
         case links
-        
-        static let allSections = [installation, settings, links]
     }
 
     override func viewDidLoad() {
@@ -30,7 +28,7 @@ class SwabSettings: UITableViewController {
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return Section.allSections.count
+        return [Section.installation, Section.settings, Section.links].count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
