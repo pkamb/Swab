@@ -32,7 +32,9 @@ class SwabSettings: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let section = Section(rawValue: section)!
+        guard let section = Section(rawValue: section) else {
+            return 0
+        }
         
         switch section {
         case .installation: return 1
