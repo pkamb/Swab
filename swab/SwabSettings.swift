@@ -74,7 +74,9 @@ class SwabSettings: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let section = Section(rawValue: section)!
+        guard let section = Section(rawValue: section) else {
+            return nil
+        }
         
         switch section {
         case .installation: return "INSTALLATION"
