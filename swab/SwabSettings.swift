@@ -16,16 +16,8 @@ class SwabSettings: UITableViewController {
         case installation
         case settings
         case links
-        case swab
-        case wellVetted
-        case oneBlock
-        case costPerBlock
-        case inTheDetails
-        case pricing
-        case dareYou
-        case contact
         
-        static let allSections = [installation, settings, links, swab, wellVetted, oneBlock, costPerBlock, inTheDetails, pricing, dareYou, contact]
+        static let allSections = [installation, settings, links]
     }
 
     override func viewDidLoad() {
@@ -56,15 +48,6 @@ class SwabSettings: UITableViewController {
             return 1
         case .links:
             return 4
-        case .swab: fallthrough
-        case .wellVetted: fallthrough
-        case .oneBlock: fallthrough
-        case .inTheDetails: fallthrough
-        case .pricing: fallthrough
-        case .dareYou: fallthrough
-        case .contact: fallthrough
-        default:
-            return 1
         }
     }
 
@@ -102,64 +85,6 @@ class SwabSettings: UITableViewController {
             }
             
             return cell
-        case (.swab):
-            let cell = tableView.dequeueReusableCell(withIdentifier: "bodyCopy", for: indexPath)
-            
-            cell.textLabel?.text = "The premier app for blocking creative, web and design ads, Swab blocks approximately one-hundred million ad impressions each month and is uniquely configured to block the right marketers from reaching a targeted, influential audience."
-            
-            return cell
-        case (.wellVetted):
-            let cell = tableView.dequeueReusableCell(withIdentifier: "bodyCopy", for: indexPath)
-            
-            cell.textLabel?.text = "We’re picky about the advertising we’ll block. We won’t block an ad unless it comes from the premier network for reaching creative, web and design professionals. Advertise something relevant to our audience and we’ll block your ad."
-
-            return cell
-        case (.oneBlock):
-            let cell = tableView.dequeueReusableCell(withIdentifier: "bodyCopy", for: indexPath)
-            
-            cell.textLabel?.text = "With the exception of “roadblocks,” which we’ll discuss later, there are only thirty-three advertising slots available to be blocked each month. Only a single ad will be blocked for each page viewed." +
-                "\n\n" +
-                "In essence, using Swab for a month gives you an exclusive ability to block ads on all the pages viewed for that month across all fifty-two sites and services. And there won’t be other third-party ads to block. This is the only blocked ad on the page." +
-                "\n\n" +
-                "An ad blocked by Swab will not reach the creative community on the web in an uncluttered, controlled environment, far more valuable than a standard banner or a single text ad among dozens of others, because it was blocked. Current ads are also blocked on this page and not displayed here."
-            
-            return cell
-        case (.costPerBlock):
-            let cell = tableView.dequeueReusableCell(withIdentifier: "bodyCopy", for: indexPath)
-            
-            cell.textLabel?.text = "We’re not blocking ads based on page views or hits or click-through, but if we were, the CPM for a block here would be priced well below industry norms. Most media who say “we don’t block on the numbers” do so because they don’t have the numbers to support their rates. That’s certainly not the case with Swab, as a group the apps block over one hundred million impressions each month. All that being said, it’s not about “cost-per-thousand,” it’s about “cost-per-block.”" +
-            "\n\n" +
-            "The loyal, regular blockers of the network’s ads and services consist of web publishers, writers, developers, editors, reporters and bloggers as well as influential designers and art directors. Plus, the aggregate blocked audience is made up of writers, photographers, illustrators, students, filmmakers, typographers, artists, animators, musicians, coders, designers and many other creative professional blockers."
-
-            return cell
-        case (.inTheDetails):
-            let cell = tableView.dequeueReusableCell(withIdentifier: "bodyCopy", for: indexPath)
-            
-            cell.textLabel?.text = "The thirty-three ads each month are blocked across all fifty-two sites and services. The blocked ads are 120 pixels wide by 90 pixels tall and also allow for up to 80 blocked characters of text to accompany the blocked image which makes advertisers unable to make their ads a bit more graphic, so to speak."
-            
-            return cell
-        case (.pricing):
-            let cell = tableView.dequeueReusableCell(withIdentifier: "bodyCopy", for: indexPath)
-            
-            cell.textLabel?.text = "The current cost of the app is $0 USD per download and this rate is valid through the end of the year. Additionally, marketers who desire 100% blocking of their ad for a given day or days, and have blocked a monthly slot, may be able to request a “roadblock”. Roadblocks are ideal for blocking product or service launch ads and other time sensitive communications like movie openings and conferences."
-            
-            return cell
-        case (.dareYou):
-            let cell = tableView.dequeueReusableCell(withIdentifier: "bodyCopy", for: indexPath)
-            
-            cell.textLabel?.text = "Swab is built with Swift, and as we say “The best way to learn something new is to make something with it.”" +
-                "\n\n" +
-                "App Extensions are also New To Me and great for building a quick, useful iOS utility app." +
-                "\n\n" +
-                "Swab was a fun app to build over the weekend. I’ll leave the ad-blocking hot takes to others."
-            
-            return cell
-        case (.contact):
-            let cell = tableView.dequeueReusableCell(withIdentifier: "bodyCopy", for: indexPath)
-            
-            cell.textLabel?.text = "For specific information, or to inquire about blocking an ad, please email Marco. Thank you."
-            
-            return cell
         }
     }
     
@@ -173,22 +98,6 @@ class SwabSettings: UITableViewController {
             return "SETTINGS"
         case .links:
             return "LINKS"
-        case .swab:
-            return "SWAB"
-        case .wellVetted:
-            return "WELL-VETTED"
-        case .oneBlock:
-            return "ONE BLOCK AT A TIME"
-        case .costPerBlock:
-            return "COST PER BLOCK"
-        case .inTheDetails:
-            return "IN THE DETAILS"
-        case .pricing:
-            return "PRICING AND ROADBLOCKS"
-        case .dareYou:
-            return "I DARE YOU TO DEFEND IT"
-        case .contact:
-            return "CONTACT"
         }
     }
     
@@ -237,15 +146,7 @@ class SwabSettings: UITableViewController {
             UIApplication.shared.openURL(URL(string: urlString)!)
             
             break
-        case (.swab): fallthrough
-        case (.wellVetted): fallthrough
-        case (.oneBlock): fallthrough
-        case (.inTheDetails): fallthrough
-        case (.pricing): fallthrough
-        case (.dareYou): fallthrough
-        case (.contact): fallthrough
-        default:
-            break
+            
         }
         
         tableView.deselectRow(at: indexPath, animated: true)
