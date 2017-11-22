@@ -10,7 +10,7 @@ import UIKit
 
 class SwabSettings: UITableViewController {
     
-    @IBOutlet weak var headerText: UITextView?
+    @IBOutlet weak var headerText: UITextView!
     
     enum Section: Int {
         case installation
@@ -70,7 +70,7 @@ class SwabSettings: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        headerText!.font = UIFont(name: "Georgia", size: (UIScreen.main.bounds.size.width <= 320) ? 24.0 : 28.0)
+        headerText.font = UIFont(name: "Georgia", size: (UIScreen.main.bounds.size.width <= 320) ? 24.0 : 28.0)
         self.tableView.backgroundColor = UIColor(red: 247/255.0, green:247/255.0, blue:247/255.0, alpha:1)
         self.tableView.estimatedRowHeight = 44
         self.tableView.rowHeight = UITableViewAutomaticDimension
