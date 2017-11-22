@@ -113,15 +113,7 @@ class SwabSettings: UITableViewController {
         
         switch section {
         case .installation:
-            let title = "ENABLE VIA SETTINGS"
-            var message = "Safari Content Blockers must be enabled via the Settings app"
-            message += "\n\nSettings → Safari → Content Blockers"
-            
-            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            
-            let action = UIAlertAction(title: "I'll Enable Swab Manually", style: .default, handler: nil)
-            alert.addAction(action)
-            
+            let alert = SwabSettings.enableViaSettingsAlert()
             self.present(alert, animated: true, completion: nil)
             
             // This URL will open the app's Settings page, not the Settings.app main page.
@@ -138,6 +130,19 @@ class SwabSettings: UITableViewController {
         }
         
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    static func enableViaSettingsAlert() -> UIAlertController {
+        let title   = "ENABLE VIA SETTINGS"
+        let message = "Safari Content Blockers must be enabled via the Settings app"
+                    + "\n\nSettings → Safari → Content Blockers"
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "I'll Enable Swab Manually", style: .default, handler: nil)
+        alert.addAction(action)
+        
+        return alert
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
