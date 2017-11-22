@@ -16,6 +16,14 @@ class SwabSettings: UITableViewController {
         case installation
         case settings
         case links
+        
+        var title: String {
+            switch self {
+            case .installation: return "INSTALLATION"
+            case .settings:     return "SETTINGS"
+            case .links:        return "LINKS"
+            }
+        }
     }
 
     override func viewDidLoad() {
@@ -74,15 +82,7 @@ class SwabSettings: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        guard let section = Section(rawValue: section) else {
-            return nil
-        }
-        
-        switch section {
-        case .installation: return "INSTALLATION"
-        case .settings:     return "SETTINGS"
-        case .links:        return "LINKS"
-        }
+        return Section(rawValue: section)?.title
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
