@@ -24,6 +24,14 @@ class SwabSettings: UITableViewController {
             case .links:        return "LINKS"
             }
         }
+        
+        var numberOfRows: Int {
+            switch self {
+            case .installation: return 1
+            case .settings:     return 1
+            case .links:        return 4
+            }
+        }
     }
 
     override func viewDidLoad() {
@@ -40,15 +48,7 @@ class SwabSettings: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let section = Section(rawValue: section) else {
-            return 0
-        }
-        
-        switch section {
-        case .installation: return 1
-        case .settings:     return 1
-        case .links:        return 4
-        }
+        return Section(rawValue: section)?.numberOfRows ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
