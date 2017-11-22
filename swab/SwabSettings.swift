@@ -109,7 +109,7 @@ class SwabSettings: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let section = Section(rawValue: (indexPath as NSIndexPath).section)!
+        let section = Section(rawValue: indexPath.row)!
         
         switch section {
         case .installation:
