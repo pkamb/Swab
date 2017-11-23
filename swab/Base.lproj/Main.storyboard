@@ -76,7 +76,7 @@ DESIGN CULTURE ADS</string>
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="swabSetting" textLabel="dEP-cw-knG" style="IBUITableViewCellStyleDefault" id="Bgz-4a-YRy" userLabel="Setting Toggle">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="settings" textLabel="dEP-cw-knG" style="IBUITableViewCellStyleDefault" id="Bgz-4a-YRy" userLabel="Setting Toggle">
                                 <rect key="frame" x="0.0" y="217" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bgz-4a-YRy" id="cwd-H3-OvR">
