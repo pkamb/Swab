@@ -25,7 +25,7 @@ enum Section: Int {
         switch self {
         case .installation: return "installation"
         case .settings:     return "settings"
-        case .links:        return "link"
+        case .links:        return "links"
         }
     }
     
