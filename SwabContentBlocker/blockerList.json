@@ -12,8 +12,17 @@
             "type": "css-display-none",
             "selector": "#fake_ad"
         },
-            "trigger": {
+        "trigger": {
             "url-filter": "swabthe.com"
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#SidebarMartini"
+        },
+        "trigger": {
+            "url-filter": "daringfireball.net"
         }
     }
 ]
