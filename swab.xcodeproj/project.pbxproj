@@ -10,7 +10,6 @@
 		585982331BADD5940086654C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585982321BADD5940086654C /* AppDelegate.swift */; };
 		585982381BADD5940086654C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 585982361BADD5940086654C /* Main.storyboard */; };
 		5859823A1BADD5940086654C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585982391BADD5940086654C /* Assets.xcassets */; };
-		585982531BADD5940086654C /* swabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585982521BADD5940086654C /* swabUITests.swift */; };
 		585982671BADD9220086654C /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 585982661BADD9220086654C /* blockerList.json */; };
 		585982691BADD9220086654C /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585982681BADD9220086654C /* ActionRequestHandler.swift */; };
 		5859826D1BADD9220086654C /* SwabContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 585982641BADD9220086654C /* SwabContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -18,13 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5859824F1BADD5940086654C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 585982271BADD5940086654C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5859822E1BADD5940086654C;
-			remoteInfo = swab;
-		};
 		5859826B1BADD9220086654C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 585982271BADD5940086654C /* Project object */;
@@ -54,9 +46,6 @@
 		585982371BADD5940086654C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		585982391BADD5940086654C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5859823E1BADD5940086654C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5859824E1BADD5940086654C /* swabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		585982521BADD5940086654C /* swabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swabUITests.swift; sourceTree = "<group>"; };
-		585982541BADD5950086654C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		585982641BADD9220086654C /* SwabContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwabContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		585982661BADD9220086654C /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
 		585982681BADD9220086654C /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
@@ -66,13 +55,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		5859822C1BADD5940086654C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5859824B1BADD5940086654C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				585982311BADD5940086654C /* swab */,
-				585982511BADD5940086654C /* swabUITests */,
 				585982651BADD9220086654C /* SwabContentBlocker */,
 				585982301BADD5940086654C /* Products */,
 			);
@@ -103,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				5859822F1BADD5940086654C /* Swab.app */,
-				5859824E1BADD5940086654C /* swabUITests.xctest */,
 				585982641BADD9220086654C /* SwabContentBlocker.appex */,
 			);
 			name = Products;
@@ -119,15 +99,6 @@
 				5859823E1BADD5940086654C /* Info.plist */,
 			);
 			path = swab;
-			sourceTree = "<group>";
-		};
-		585982511BADD5940086654C /* swabUITests */ = {
-			isa = PBXGroup;
-			children = (
-				585982521BADD5940086654C /* swabUITests.swift */,
-				585982541BADD5950086654C /* Info.plist */,
-			);
-			path = swabUITests;
 			sourceTree = "<group>";
 		};
 		585982651BADD9220086654C /* SwabContentBlocker */ = {
@@ -162,24 +133,6 @@
 			productReference = 5859822F1BADD5940086654C /* Swab.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5859824D1BADD5940086654C /* swabUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5859825D1BADD5950086654C /* Build configuration list for PBXNativeTarget "swabUITests" */;
-			buildPhases = (
-				5859824A1BADD5940086654C /* Sources */,
-				5859824B1BADD5940086654C /* Frameworks */,
-				5859824C1BADD5940086654C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				585982501BADD5940086654C /* PBXTargetDependency */,
-			);
-			name = swabUITests;
-			productName = swabUITests;
-			productReference = 5859824E1BADD5940086654C /* swabUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		585982631BADD9220086654C /* SwabContentBlocker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 585982701BADD9220086654C /* Build configuration list for PBXNativeTarget "SwabContentBlocker" */;
@@ -210,11 +163,6 @@
 						CreatedOnToolsVersion = 7.0;
 						LastSwiftMigration = 0910;
 					};
-					5859824D1BADD5940086654C = {
-						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0910;
-						TestTargetID = 5859822E1BADD5940086654C;
-					};
 					585982631BADD9220086654C = {
 						CreatedOnToolsVersion = 7.0;
 						LastSwiftMigration = 0910;
@@ -235,7 +183,6 @@
 			projectRoot = "";
 			targets = (
 				5859822E1BADD5940086654C /* Swab */,
-				5859824D1BADD5940086654C /* swabUITests */,
 				585982631BADD9220086654C /* SwabContentBlocker */,
 			);
 		};
@@ -248,13 +195,6 @@
 			files = (
 				5859823A1BADD5940086654C /* Assets.xcassets in Resources */,
 				585982381BADD5940086654C /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5859824C1BADD5940086654C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,14 +218,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5859824A1BADD5940086654C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				585982531BADD5940086654C /* swabUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		585982601BADD9220086654C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,11 +229,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		585982501BADD5940086654C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5859822E1BADD5940086654C /* Swab */;
-			targetProxy = 5859824F1BADD5940086654C /* PBXContainerItemProxy */;
-		};
 		5859826C1BADD9220086654C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 585982631BADD9220086654C /* SwabContentBlocker */;
@@ -453,34 +380,6 @@
 			};
 			name = Release;
 		};
-		5859825E1BADD5950086654C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = swabUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.knurling.swabUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = swab;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		5859825F1BADD5950086654C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = swabUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.knurling.swabUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = swab;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 		5859826E1BADD9220086654C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -526,15 +425,6 @@
 			buildConfigurations = (
 				585982581BADD5950086654C /* Debug */,
 				585982591BADD5950086654C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5859825D1BADD5950086654C /* Build configuration list for PBXNativeTarget "swabUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5859825E1BADD5950086654C /* Debug */,
-				5859825F1BADD5950086654C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
