@@ -151,8 +151,9 @@ class SwabSettings: UITableViewController {
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         view.tintColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         
-        let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        headerView.textLabel?.font = UIFont(name: "Verdana", size: 12.0)
+        if let headerView: UITableViewHeaderFooterView = view as? UITableViewHeaderFooterView {
+            headerView.textLabel?.font = UIFont(name: "Verdana", size: 12.0)
+        }
     }
     
     override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
