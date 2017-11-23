@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MobileCoreServices
 
 class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
 
