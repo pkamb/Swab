@@ -22,11 +22,7 @@ enum Section: Int {
     }
     
     var cellIdentifier: String {
-        switch self {
-        case .installation: return "installation"
-        case .settings:     return "settings"
-        case .links:        return "links"
-        }
+        return title.lowercased()
     }
     
     var numberOfRows: Int {
