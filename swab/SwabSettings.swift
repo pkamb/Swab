@@ -8,6 +8,65 @@
 
 import UIKit
 
+enum Section: Int {
+    case installation
+    case settings
+    case links
+    
+    var title: String {
+        switch self {
+        case .installation: return "INSTALLATION"
+        case .settings:     return "SETTINGS"
+        case .links:        return "LINKS"
+        }
+    }
+    
+    var cellIdentifier: String {
+        switch self {
+        case .installation: return "installation"
+        case .settings:     return "swabSetting"
+        case .links:        return "link"
+        }
+    }
+    
+    var numberOfRows: Int {
+        switch self {
+        case .installation: return 1
+        case .settings:     return 1
+        case .links:        return 4
+        }
+    }
+}
+
+enum Link: Int {
+    case website
+    case github
+    case twitter
+    case appStore
+    
+    var title: String {
+        switch self {
+        case .website:  return "Website"
+        case .github:   return "GitHub"
+        case .twitter:  return "Twitter"
+        case .appStore: return "App Store"
+        }
+    }
+    
+    var url: URL {
+        switch self {
+        case .website:  return "http://swabthe.com"
+        case .github:   return "https://github.com/pkamb/swab"
+        case .twitter:  return "https://twitter.com/SwabThe"
+        case .appStore: return "https://itunes.apple.com/us/app/swab-content-blocker-creative/id1042086002&mt=8"
+        }
+    }
+    
+    func open() {
+        UIApplication.shared.openURL(url)
+    }
+}
+
 extension URL: ExpressibleByStringLiteral {
     public init(stringLiteral value: StaticString) {
         self = URL(string: "\(value)")!
@@ -17,67 +76,6 @@ extension URL: ExpressibleByStringLiteral {
 class SwabSettings: UITableViewController {
     
     @IBOutlet weak var headerText: UITextView!
-    
-    enum Section: Int {
-        case installation
-        case settings
-        case links
-        
-        var title: String {
-            switch self {
-            case .installation: return "INSTALLATION"
-            case .settings:     return "SETTINGS"
-            case .links:        return "LINKS"
-            }
-        }
-        
-        var cellIdentifier: String {
-            switch self {
-            case .installation: return "installation"
-            case .settings:     return "swabSetting"
-            case .links:        return "link"
-            }
-        }
-        
-        var numberOfRows: Int {
-            switch self {
-            case .installation: return 1
-            case .settings:     return 1
-            case .links:        return 4
-            }
-        }
-    }
-    
-    enum Link: Int {
-        case website
-        case github
-        case twitter
-        case appStore
-        
-        var title: String {
-            switch self {
-            case .website:  return "Website"
-            case .github:   return "GitHub"
-            case .twitter:  return "Twitter"
-            case .appStore: return "App Store"
-            }
-        }
-        
-        var url: URL {
-            switch self {
-            case .website:  return "http://swabthe.com"
-            case .github:   return "https://github.com/pkamb/swab"
-            case .twitter:  return "https://twitter.com/SwabThe"
-            case .appStore: return "https://itunes.apple.com/us/app/swab-content-blocker-creative/id1042086002&mt=8"
-            }
-        }
-        
-        func open() {
-            UIApplication.shared.openURL(url)
-        }
-    }
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
