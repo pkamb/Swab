@@ -95,7 +95,7 @@ class SwabSettings: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let section = Section(rawValue: (indexPath as NSIndexPath).section)!
+        let section = Section(rawValue: indexPath.section)!
         
         let cell = tableView.dequeueReusableCell(withIdentifier: section.cellIdentifier, for: indexPath)
         
