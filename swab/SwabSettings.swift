@@ -63,7 +63,7 @@ class SwabSettings: UITableViewController {
             }
         }
         
-        var urlString: String {
+        var url: URL {
             switch self {
             case .website:  return "http://swabthe.com"
             case .github:   return "https://github.com/pkamb/swab"
@@ -71,7 +71,13 @@ class SwabSettings: UITableViewController {
             case .appStore: return "https://itunes.apple.com/us/app/swab-content-blocker-creative/id1042086002&mt=8"
             }
         }
+        
+        func open() {
+            UIApplication.shared.openURL(url)
+        }
     }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -125,9 +131,7 @@ class SwabSettings: UITableViewController {
         case .settings:
             break
         case .links:
-            if let link = Link(rawValue: indexPath.row) {
-                UIApplication.shared.openURL(URL(string: link.urlString)!)
-            }
+            Link(rawValue: indexPath.row)?.open()
         }
         
         tableView.deselectRow(at: indexPath, animated: true)
