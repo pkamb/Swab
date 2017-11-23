@@ -8,6 +8,12 @@
 
 import UIKit
 
+extension URL: ExpressibleByStringLiteral {
+    public init(stringLiteral value: StaticString) {
+        self = URL(string: "\(value)")!
+    }
+}
+
 class SwabSettings: UITableViewController {
     
     @IBOutlet weak var headerText: UITextView!
