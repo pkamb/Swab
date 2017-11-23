@@ -29,7 +29,7 @@ enum Section: Int {
         switch self {
         case .installation: return 1
         case .settings:     return 1
-        case .links:        return 4
+        case .links:        return Link.count
         }
     }
 }
@@ -39,6 +39,12 @@ enum Link: Int {
     case github
     case twitter
     case appStore
+    
+    static let count: Int = {
+        var count: Int = 0
+        while let _ = Link(rawValue: count) { count += 1 }
+        return count
+    }()
     
     var title: String {
         switch self {
