@@ -104,9 +104,9 @@
 		585982651BADD9220086654C /* SwabContentBlocker */ = {
 			isa = PBXGroup;
 			children = (
-				585982661BADD9220086654C /* blockerList.json */,
-				585982681BADD9220086654C /* ActionRequestHandler.swift */,
 				5859826A1BADD9220086654C /* Info.plist */,
+				585982681BADD9220086654C /* ActionRequestHandler.swift */,
+				585982661BADD9220086654C /* blockerList.json */,
 			);
 			path = SwabContentBlocker;
 			sourceTree = "<group>";
